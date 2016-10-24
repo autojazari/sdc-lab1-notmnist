@@ -9,6 +9,7 @@ The purpose of this assignment was to practice the following:
 * `TensorFLow`
 * `Stochastic Gradient Descent`
 * `Learning Rate Decay`
+* `Cross Validation`
 
 Most of the code was provided but as a jupyter notebook.  The excercise uses the [notMNIST](http://yaroslavvb.blogspot.com/2011/09/notmnist-dataset.html) data set
 
