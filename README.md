@@ -9,17 +9,9 @@ The purpose of this assignment was to practice the following:
 * `TensorFLow`
 * `Stochastic Gradient Descent`
 * `Learning Rate Decay`
+* `Cross Validation`
 
-Much of the code was provided but as a jupyter notebook.  The excercise uses the [notMNIST](http://yaroslavvb.blogspot.com/2011/09/notmnist-dataset.html) data set
-
-I restructured the code into reusable functions and intend to run the same code on `TensorFLow`'s own MNIST dataset which should be importable via 
-
-```
-import input_data
-mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
-```
-after downloading [input_data.py](https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/examples/tutorials/mnist/input_data.py)
-
+Most of the code was provided but as a jupyter notebook.  The excercise uses the [notMNIST](http://yaroslavvb.blogspot.com/2011/09/notmnist-dataset.html) data set
 
 ## OS X
 ```
