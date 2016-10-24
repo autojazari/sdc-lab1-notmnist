@@ -26,7 +26,8 @@ pip3 install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0
 ```
 ## Summary
 
-* `cross validation` : ~0.1% - ca. 1800
+* `cross validation` : 
+  * batch size : ~0.1% - ca. 1800
 * `epochs` : 50
 
 
