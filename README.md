@@ -3,7 +3,16 @@
 Udacity.com course uses Jupyter Notebook, however I perfer to do run all code from the terminal.  This guide will help you setup OS X and Ubuntu / Kali-Rolling with `Python 3.5`, `Matplotlib`, `TensorFlow` and `sklearn`.
 
 ## Description
-The purpose of this assignment was to practice Linear Regression using `TensorFLow`, plus learn about `Stocastic Gradient Descent`.  
+The purpose of this assignment was to practice the following
+
+* `Linear Regression`
+* `TensorFLow`
+* `Stochastic Gradient Descent`
+* `Learning Rate Decay`
+
+Much of the code was provided but as a jupyter notebook.  The excercise uses the [notMNIST](http://yaroslavvb.blogspot.com/2011/09/notmnist-dataset.html) data set
+
+I restructured the code into reusable functions and intend to 
 
 
 ## OS X
