@@ -16,5 +16,5 @@ pip3 install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0
 
 ## Example Plot
 
-
+![alt tag](https://raw.githubusercontent.com/autojazari/sdc-lab1-notmnist/master/SDC-Assignment-1-Learn-Rate-Decay.png)
 
