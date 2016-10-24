@@ -106,26 +106,18 @@ def setup_accuracy_function(prediction, labels):
       return accuracy
 
 
-def train_model(session, args_dict):
-      try:
-            log_batch_step = args_dict['log_batch_step']
-            batch_count = args_dict['batch_count']
-            batch_size = args_dict['batch_size']
-            epoch_i = args_dict['epoch_i']
-            epochs = args_dict['epochs']
-            accuracy = args_dict['accuracy']
-            train_feed_dict = args_dict['train_feed_dict']
-            valid_feed_dict = args_dict['valid_feed_dict']
-            train_features = args_dict['train_features']
-            train_labels = args_dict['train_labels']
-            optimizer = args_dict['optimizer']
-            loss = args_dict['loss']
-            features = args_dict['features']
-            labels = args_dict['labels']
-            
-      except KeyError as ke:
-            print("Missing argument " + e)
-            import sys;sys.exit(1)
+def train_model():
+      #try:
+      #      _vars = ('batches', 'log_batch_step', 'batch_count', 'batch_size', 'epoch_i', 'epochs',
+      #               'accuracy', 'train_feed_dict', 'valid_feed_dict', 'train_features', 'train_labels',
+      #               'optimizer', 'loss', 'features', 'labels', 'loss_batch', 'train_acc_batch',
+      #               'valid_acc_batch',)
+      #      for var in _vars:
+      #            locals()[var] = args_dict[var]
+
+      #except KeyError as ke:
+      #      print("Missing argument ", str(ke))
+      #      import sys;sys.exit(1)
 
       # Progress bar
       batches_pbar = tqdm(range(batch_count), desc='Epoch {:>2}/{}'.format(epoch_i+1, epochs), unit='batches')
@@ -213,27 +205,12 @@ def main():
             batch_count = int(math.ceil(len(train_features)/batch_size))
             
             for epoch_i in range(epochs):
-                  args_dict = dict(
-                        log_batch_step = log_batch_step,
-                        batch_count = batch_count,
-                        batch_size = batch_size,
-                        epoch_i = epoch_i,
-                        epochs = epochs,
-                        accuracy = accuracy,
-                        train_feed_dict = train_feed_dict,
-                        valid_feed_dict = valid_feed_dict,
-                        train_features = train_features,
-                        train_labels = train_labels,
-                        optimizer = optimizer,
-                        loss = loss,
-                        labels = labels,
-                        features = features
-            
-                  )
+                  for k, v in locals().items():
+                        train_model.__globals__[k] = v
 
-            train_model(session, args_dict)
-            test_model(session. accuracy, test_feed_dict)
-      
+                  train_model()
+
+            test_model(session, accuracy, test_feed_dict)
       plot_model(batches, loss_batch, train_acc_batch, valid_acc_batch)
 
 # execute!

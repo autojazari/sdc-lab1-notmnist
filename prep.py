@@ -82,6 +82,8 @@ def one_hot_encode(train_labels, test_labels):
     train_labels = train_labels.astype(np.float32)
     test_labels = test_labels.astype(np.float32)
 
+    return train_labels, test_labels
+
 def prep_notmnist():
     # does the picke already exist?
     if os.path.isfile('notMNIST.pickle'): return
@@ -99,7 +101,7 @@ def prep_notmnist():
     train_features = normalize(train_features)
     test_features = normalize(test_features)
 
-    one_hot_encode(train_labels, test_labels)
+    train_labels, test_labels = one_hot_encode(train_labels, test_labels)
     print('Labels One-Hot Encoded')
 
     # Get randomized datasets for training and validation
