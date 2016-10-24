@@ -1,6 +1,6 @@
 # Assignment 1 of Udacity.com Self-Drive Course
 
-Udacity.com course uses Jupyter Notebook, however I perfer to do run all code from the terminal.  This guide will help you setup OS X and Ubuntu / Kali-Rolling with `Python 3.5`, `Matplotlib`, `TensorFlow` and `sklearn`.
+Udacity.com course uses Jupyter Notebook, however I perfer to run all code from the terminal.  This guide will help you setup OS X and Ubuntu / Kali-Rolling with `Python 3.5`, `Matplotlib`, `TensorFlow` and `sklearn`.
 
 ## Description
 The purpose of this assignment was to practice the following:
