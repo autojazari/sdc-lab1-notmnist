@@ -121,3 +121,8 @@ def prep_notmnist():
         'test_labels': test_labels,
     }
     save_data(data)
+
+def prep_mnist():
+    import input_data
+    mnist = input_data.read_data_sets(".", one_hot=True)
+    

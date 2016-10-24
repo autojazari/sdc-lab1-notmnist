@@ -191,7 +191,7 @@ def main():
       
       optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(loss)
       batch_size = int(len(train_features) * 0.009)
-      print("batch size", batch_size)
+      print("batch size", batch_size, "of", len(train_features))
       
       # Measurements use for graphing loss and accuracy
       log_batch_step = 50
@@ -199,7 +199,8 @@ def main():
       loss_batch = []
       train_acc_batch = []
       valid_acc_batch = []
-
+      from time import time
+      start_time = time()
       with tf.Session() as session:
             session.run(init)
             batch_count = int(math.ceil(len(train_features)/batch_size))
@@ -211,6 +212,9 @@ def main():
                   train_model()
 
             test_model(session, accuracy, test_feed_dict)
+      end_time = time()
+      time_taken = end_time - start_time # time_taken is in seconds
+      print("time taken", time_taken)
       plot_model(batches, loss_batch, train_acc_batch, valid_acc_batch)
 
 # execute!
