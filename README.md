@@ -29,6 +29,10 @@ pip3 install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0
 * `cross validation` : 
   * batch size : ~0.1% - ca. 1700
 * `epochs` : 50 iterations
+* `duration`: 95 seconds 
+* environment:
+  * i-7 2.6 GHz
+  * 16GB RAM
 
 
 ## Example Plot
