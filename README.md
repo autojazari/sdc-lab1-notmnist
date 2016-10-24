@@ -25,11 +25,10 @@ pip3 install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0
 /usr/local/Cellar/python3/3.5.2_3/bin/python3.5 main.py
 ```
 ## Summary
-```
+
 * `cross validation` : ~0.1% - ca. 1800
 * `epochs` : 50
 
-```
 
 ## Example Plot
 
