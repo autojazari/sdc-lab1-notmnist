@@ -39,3 +39,6 @@ pip3 install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0
 
 ![alt tag](https://raw.githubusercontent.com/autojazari/sdc-lab1-notmnist/master/SDC-Assignment-1-Learn-Rate-Decay.png)
 
+
+## Self Drive Cars Resume
+I am using [this blog](http://sdc.autojazari.com/) as work in progress to note my journey to learning how to become a Self-Drive Car Engineer.  Comments and feedback are always welcome.
